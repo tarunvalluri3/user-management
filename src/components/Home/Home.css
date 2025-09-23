@@ -1,0 +1,76 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  text-align: center; /* Center text inside */
+  font-family: Arial, sans-serif;
+}
+
+.users-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+/* Input and select styling */
+.home-container input[type="text"],
+.home-container select {
+  padding: 8px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.home-container button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-container button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.home-container h2,
+.home-container h3 {
+  margin: 10px 0;
+}
+
+/* Pagination buttons */
+.home-container .pagination button {
+  margin: 2px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.home-container .pagination button.active {
+  background-color: black;
+  color: white;
+}
+
+.total-users {
+  font-weight: bold;
+  font-size: 1.2rem;  /* slightly bigger */
+  color: #333;        /* dark gray for clarity */
+  background-color: #e0e0e0;  /* subtle highlight */
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .users-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

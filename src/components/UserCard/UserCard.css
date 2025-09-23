@@ -1,0 +1,67 @@
+.user-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; /* card can expand */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* details are left-aligned */
+  transition: transform 0.2s ease-in-out;
+}
+
+.user-card:hover {
+  transform: scale(1.02);
+}
+
+.user-card p {
+  margin: 5px 0;
+}
+
+.user-card .label {
+  font-weight: bold;
+}
+
+/* Buttons container centered */
+.user-card .buttons-container {
+  display: flex;
+  justify-content: center; /* center buttons */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.user-card button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Edit button: white */
+.user-card .edit-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.user-card .edit-btn:hover {
+  background-color: #070303;
+}
+
+/* Delete button: black */
+.user-card .delete-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.user-card .delete-btn:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-card {
+    max-width: 90%;
+  }
+}
